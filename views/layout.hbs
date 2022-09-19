@@ -5,9 +5,18 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <div id="log-out"/>
     <form action='/sessions?_method=DELETE' method='POST'>
       <input type="submit" value="Log Out">
     </form>
+      <form action='/profile/find' method='GET'>
+      <input type="submit" value="go to profile">
+    </form>
+     <form action="/profiles/find" method="POST">
+          <input id="search" name="searchBar" value="" class="search-bar" type="text" placeholder="Search for friends"/>
+          <button type="submit" class="magnifying-glass"></button>
+     </form>
+    </div>
     {{{body}}}
   </body>
 </html>
